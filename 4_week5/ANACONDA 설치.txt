@@ -1,0 +1,4 @@
+http://[repo.anaconda.com/archive](http://repo.anaconda.com/archive)
+Anaconda3-2019.10-Windows-x86_64.exe	461.5M	2019-10-15 09:27:17
+
+다운로드 후 anaconda prompt 실행후 cd c:\pywork → jupyter notebook 실행
