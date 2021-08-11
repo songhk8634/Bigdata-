@@ -1,0 +1,83 @@
+## 1. 데이터베이스 설치
+## 2. 토드 설치(plsql developer 가능) - 클라이언트 툴
+## 3. 사용자를 생성
+sqlplus 로 접속 (터미널에서 접속)command 창이 터미널 역할
+>sqlplus /nolog
+sysdba로 접속
+>conn /as sysdba
+big이라는 user 생성
+>create user c##big identified by 1234;
+권한 부여
+>grant connect, resource, dba to c##big;
+접속테스트
+>conn
+사용자명 : 
+비밀번호 :
+>conn c##big
+비밀번호 :
+## 4. 기본테스트
+>select * from tab;
+>tnsping orcl
+##5. 토드 접속
+user : c##big
+password : 1234
+tns : orcl
+
+테이블 만들기
+create table 테이블명(컬럼1명  데이터타입, 컬럼2명 데이터타입)
+
+create table iris(seq number(5),
+sl number(10,3),
+sw number(10,3),
+pl number(10,3),
+pw number(10,3),
+sp varchar2(15),
+flag char(1));
+
+query하기 
+select * from iris;
+
+만든 테이블의 형태보기
+desc iris;
+
+테이블 고치기
+alter table iris modify(flag char(2));
+
+테이블 지우기
+drop table iris purge;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+insert into iris(sl,sw,pl,pw,sp) values(12,11,10,10,'setosa');
+
+
+
+select * from iris;
+
+commit;
+
+rollback;
+
+
+
+* 추가문제
+
+100~999 세자리 두 수의 곱으로 이루어진 수
+
+46547
+74564
+- 쌍둥이 숫자 중 가장 큰 수 찾기
+
+
+- 두번째 큰 수 찾기

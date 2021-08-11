@@ -1,0 +1,11 @@
+cmd 
+-> sqlplus /nolog         sqlplus접속
+-> conn /as sysdba 
+-> create user c##biganalysis[유저이름] identified by 1234[비번]
+grant connect, resource, dba to (유저이름)  conn -> 아이디 비번    
+-권한 부여
+commit                -커밋시켜주기
+insert into (어디에)          -데이터 추가하기
+create table xxx(aa varchar2(100), bb varchar2(20));
+insert into xxx(aa,bb) values('aaaa','bbbb');
+select * from xxx;

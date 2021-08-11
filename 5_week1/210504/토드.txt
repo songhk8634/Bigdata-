@@ -1,0 +1,44 @@
+1. 데이터베이스 설치
+2. 토드 설치(plsql developer 가능) - 클라이언트 툴
+3. 사용자를 생성   cmd
+sqlplus 로 접속 (터미널에서 접속) command 창이 터미널 역할
+-> sqlplus /nolog          sqlplus 접속
+-> conn /as sysdba        sysdba로 접속
+-> create user c##big identified by 1234;      big이라는 user생성
+-> grant connect, resource, dba to c##big    권한부여
+-> conn      아이디비번입력
+4. 기본테스트
+-> select * from tab;
+-> tnsping orcl
+토드 접속
+아이디비번입력
+tns : orcl
+
+테이블 만들기
+create table 테이블명(column1명 데이터타입,column2명 데이터타입
+create table iris(sl number(10,3),sw number(10,3),pl number(10,3),pw number(10,3), sp varchar2(15), flag char(1));
+
+
+
+query하기 (select)
+select * from iris;
+
+만든 테이블의 형태보기
+desc iris;
+
+테이블 고치기
+alter table iris modify(flag char(2));
+
+테이블 지우기
+drop table iris purge;
+
+
+
+
+
+
+
+
+
+
+
