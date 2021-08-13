@@ -1,0 +1,15 @@
+https://konlpy-ko.readthedocs.io/ko/v0.4.3/install/ 방법
+
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+
+windows x64 설치
+
+java_home 설정
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype 들어가서
+cmd에서  python --version 확인후 jpype 설치 
+ex) 3.7.4일경우 cp37에서 64bit 설치
+
+anaconda prompt 실행 whl파일경로 cd후 pip install JPype1-1.3.0-cp37-cp37m-win_amd64.whl
+
+pip install konlpy 
